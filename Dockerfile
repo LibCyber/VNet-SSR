@@ -2,7 +2,7 @@ FROM golang as builder
 ENV CGO_ENABLED=0 \
     GOOS=linux \
     GOARCH=amd64
-RUN apt update && apt install git -y 
+RUN apt update && apt install git -y
 RUN git clone https://github.com/LibCyber/VNet-SSR.git /usr/local/go/src/github.com/LibCyber/VNet-SSR
 RUN  cd  /usr/local/go/src/github.com/LibCyber/VNet-SSR && \
     go build -ldflags "-s -w" -o bin/linux/vnet cmd/shadowsocksr-server/main.go
@@ -24,4 +24,4 @@ COPY --from=builder /usr/local/go/src/github.com/LibCyber/VNet-SSR/bin/linux/vne
 
 WORKDIR /usr/bin/vnet/
 
-CMD /usr/bin/vnet/vnet --api_host API_HOST --key KEY --node_id NODE_ID
+CMD /usr/bin/vnet/vnet --api_host ${API_HOST} --key ${KEY} --node_id ${NODE_ID}
