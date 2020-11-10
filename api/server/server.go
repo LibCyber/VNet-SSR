@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
-	"github.com/rc452860/vnet/common/log"
-	"github.com/rc452860/vnet/common/obfs"
-	"github.com/rc452860/vnet/core"
-	"github.com/rc452860/vnet/model"
-	"github.com/rc452860/vnet/service"
-	"github.com/rc452860/vnet/utils/goroutine"
-	"github.com/rc452860/vnet/utils/langx"
+	"github.com/LibCyber/VNet-SSR/common/log"
+	"github.com/LibCyber/VNet-SSR/common/obfs"
+	"github.com/LibCyber/VNet-SSR/core"
+	"github.com/LibCyber/VNet-SSR/model"
+	"github.com/LibCyber/VNet-SSR/service"
+	"github.com/LibCyber/VNet-SSR/utils/goroutine"
+	"github.com/LibCyber/VNet-SSR/utils/langx"
 	"io/ioutil"
 	"net/http"
 	"strconv"
@@ -73,6 +73,7 @@ func detailLog() gin.HandlerFunc {
 }
 
 func StartServer(port int, s string) {
+	gin.SetMode(gin.ReleaseMode)
 	httpServerMutex.Lock()
 	defer httpServerMutex.Unlock()
 	if httpServer != nil {

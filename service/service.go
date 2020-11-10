@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/rc452860/vnet/api/client"
-	"github.com/rc452860/vnet/common/log"
-	"github.com/rc452860/vnet/core"
-	"os"
+	_ "github.com/LibCyber/VNet-SSR/api/client"
+	_ "github.com/LibCyber/VNet-SSR/common/log"
+	"github.com/LibCyber/VNet-SSR/core"
+	_ "os"
 )
 
 func Start() (err error) {
@@ -17,10 +17,10 @@ func Start() (err error) {
 	}
 
  	err = core.GetApp().Cron().AddFunc("@monthly", func() {
-		if(!client.HasCertification(core.GetApp().ApiHost())){
-			log.Error("vnet is unauthenticated")
-			os.Exit(0)
-		}
+//		if(!client.HasCertification(core.GetApp().ApiHost())){
+//			log.Error("vnet is unauthenticated")
+//			os.Exit(0)
+//		}
 	})
 	return err
 }

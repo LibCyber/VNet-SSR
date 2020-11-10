@@ -1,9 +1,9 @@
 package main
 
 import (
-	server2 "github.com/rc452860/vnet/proxy/server"
-	"github.com/rc452860/vnet/service"
-	"github.com/rc452860/vnet/utils/osx"
+	server2 "github.com/LibCyber/VNet-SSR/proxy/server"
+	"github.com/LibCyber/VNet-SSR/service"
+	"github.com/LibCyber/VNet-SSR/utils/osx"
 	"github.com/sirupsen/logrus"
 	_ "net/http/pprof"
 	"os"

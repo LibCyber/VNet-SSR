@@ -7,16 +7,16 @@ import (
 	"crypto/sha1"
 	"encoding/binary"
 	"encoding/hex"
-	"github.com/rc452860/vnet/utils/binaryx"
-	"github.com/rc452860/vnet/utils/bytesx"
-	"github.com/rc452860/vnet/utils/randomx"
+	"github.com/LibCyber/VNet-SSR/utils/binaryx"
+	"github.com/LibCyber/VNet-SSR/utils/bytesx"
+	"github.com/LibCyber/VNet-SSR/utils/randomx"
 	"hash"
 	"math"
 	"sync"
 	"time"
 
-	"github.com/rc452860/vnet/common/cache"
-	"github.com/rc452860/vnet/common/log"
+	"github.com/LibCyber/VNet-SSR/common/cache"
+	"github.com/LibCyber/VNet-SSR/common/log"
 )
 
 func conbineToBytes(data ...interface{}) []byte {

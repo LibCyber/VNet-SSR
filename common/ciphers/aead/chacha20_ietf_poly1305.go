@@ -2,7 +2,7 @@ package aead
 
 import (
 	"crypto/cipher"
-	"github.com/rc452860/vnet/utils/shadowsocksx"
+	"github.com/LibCyber/VNet-SSR/utils/shadowsocksx"
 
 	"golang.org/x/crypto/chacha20poly1305"
 )

@@ -4,14 +4,14 @@ import (
 	"bytes"
 	"crypto/cipher"
 	"crypto/rand"
-	"github.com/rc452860/vnet/common/ciphers/block"
-	"github.com/rc452860/vnet/utils/bytesx"
+	"github.com/LibCyber/VNet-SSR/common/ciphers/block"
+	"github.com/LibCyber/VNet-SSR/utils/bytesx"
 	"github.com/sirupsen/logrus"
 	"io"
 
 	"github.com/pkg/errors"
-	"github.com/rc452860/vnet/common/ciphers/aead"
-	"github.com/rc452860/vnet/common/ciphers/stream"
+	"github.com/LibCyber/VNet-SSR/common/ciphers/aead"
+	"github.com/LibCyber/VNet-SSR/common/ciphers/stream"
 )
 
 const AEAD_MAX_SEGMENT_LENGTH = 0x3FFF

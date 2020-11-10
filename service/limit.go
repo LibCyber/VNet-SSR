@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"github.com/rc452860/vnet/core"
-	"github.com/rc452860/vnet/model"
+	"github.com/LibCyber/VNet-SSR/core"
+	"github.com/LibCyber/VNet-SSR/model"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/time/rate"
 	"sync"

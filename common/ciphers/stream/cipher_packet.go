@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	"github.com/rc452860/vnet/common/pool"
+	"github.com/LibCyber/VNet-SSR/common/pool"
 )
 
 var ErrShortPacket = errors.New("short packet")

@@ -5,21 +5,21 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
-	"github.com/rc452860/vnet/core"
-	"github.com/rc452860/vnet/utils/langx"
+	"github.com/LibCyber/VNet-SSR/core"
+	"github.com/LibCyber/VNet-SSR/utils/langx"
 	"math"
 	"strconv"
 	"strings"
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/rc452860/vnet/common/ciphers"
-	"github.com/rc452860/vnet/utils/bytesx"
-	"github.com/rc452860/vnet/utils/randomx"
+	"github.com/LibCyber/VNet-SSR/common/ciphers"
+	"github.com/LibCyber/VNet-SSR/utils/bytesx"
+	"github.com/LibCyber/VNet-SSR/utils/randomx"
 	"github.com/sirupsen/logrus"
 
-	"github.com/rc452860/vnet/common/log"
-	"github.com/rc452860/vnet/utils/binaryx"
+	"github.com/LibCyber/VNet-SSR/common/log"
+	"github.com/LibCyber/VNet-SSR/utils/binaryx"
 )
 
 const (

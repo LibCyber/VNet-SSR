@@ -12,11 +12,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/rc452860/vnet/common/cache"
-	"github.com/rc452860/vnet/common/log"
-	"github.com/rc452860/vnet/utils/arrayx"
-	"github.com/rc452860/vnet/utils/randomx"
-	"github.com/rc452860/vnet/utils/stringx"
+	"github.com/LibCyber/VNet-SSR/common/cache"
+	"github.com/LibCyber/VNet-SSR/common/log"
+	"github.com/LibCyber/VNet-SSR/utils/arrayx"
+	"github.com/LibCyber/VNet-SSR/utils/randomx"
+	"github.com/LibCyber/VNet-SSR/utils/stringx"
 )
 
 // golang dont support declare constant array

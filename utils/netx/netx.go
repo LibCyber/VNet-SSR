@@ -2,11 +2,11 @@ package netx
 
 import (
 	"github.com/pkg/errors"
-	"github.com/rc452860/vnet/common/log"
-	"github.com/rc452860/vnet/common/network"
-	"github.com/rc452860/vnet/common/pool"
-	"github.com/rc452860/vnet/utils/goroutine"
-	"github.com/rc452860/vnet/utils/socksproxy"
+	"github.com/LibCyber/VNet-SSR/common/log"
+	"github.com/LibCyber/VNet-SSR/common/network"
+	"github.com/LibCyber/VNet-SSR/common/pool"
+	"github.com/LibCyber/VNet-SSR/utils/goroutine"
+	"github.com/LibCyber/VNet-SSR/utils/socksproxy"
 	"io"
 	"net"
 	"sync"

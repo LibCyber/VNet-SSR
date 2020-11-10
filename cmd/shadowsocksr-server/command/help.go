@@ -16,8 +16,8 @@ package command
 
 import (
 	"fmt"
-	"github.com/rc452860/vnet/common/log"
-	"github.com/rc452860/vnet/core"
+	"github.com/LibCyber/VNet-SSR/common/log"
+	"github.com/LibCyber/VNet-SSR/core"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"os"

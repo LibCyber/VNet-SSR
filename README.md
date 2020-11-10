@@ -23,7 +23,7 @@ window直接运行exe
 
 linx:
 ```
-wget https://github.com/rc452860/vnet/releases/download/v0.0.4/vnet_linux_amd64 -O vnet && chmod +x vnet && ./vnet
+wget https://github.com/LibCyber/VNet-SSR/releases/download/v0.0.4/vnet_linux_amd64 -O vnet && chmod +x vnet && ./vnet
 #配置好数据库后按ctrl + c退出使用nohup启动
 nohup ./vnet>vnet.log 2>&1 &
 ```
@@ -37,7 +37,7 @@ kill -9 $(ps aux | grep '[v]net' | awk '{print $2}') && nohup ./vnet>vnet.log 2>
 
 ## 编译方式
 ```
-go get -u -d github.com/rc452860/vnet/...
+go get -u -d github.com/LibCyber/VNet-SSR/...
 ```
 
 进入$gopath/rc452860/vnet目录
@@ -52,7 +52,7 @@ windows 上使用`build.cmd`脚本可以快速编译linux和windows
 在release页面下载最新的对应的可执行文件并赋予可执行权限
 列如64位linux系统
 ```
-wget https://github.com/rc452860/vnet/releases/download/v0.0.4/vnet_linux_amd64 -O vnet &&chmod +x vnet
+wget https://github.com/LibCyber/VNet-SSR/releases/download/v0.0.4/vnet_linux_amd64 -O vnet &&chmod +x vnet
 ./vnet
 ```
 按照提示输入数据库等配置信息即可完成
